@@ -278,13 +278,13 @@ export class ItemBought extends Entity {
     this.set("id", Value.fromString(value));
   }
 
-  get seller(): Bytes {
-    let value = this.get("seller");
+  get buyer(): Bytes {
+    let value = this.get("buyer");
     return value!.toBytes();
   }
 
-  set seller(value: Bytes) {
-    this.set("seller", Value.fromBytes(value));
+  set buyer(value: Bytes) {
+    this.set("buyer", Value.fromBytes(value));
   }
 
   get nftAddress(): Bytes {
